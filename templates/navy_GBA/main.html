@@ -1,0 +1,9 @@
+{%if game_list %}
+<ul>
+    {%for game in game_list%}
+    <li>{{game.name}}</li>
+    {%endfor%}
+</ul>
+{%else%}
+    <p>게임이 없습니다.</p>
+{%endif%}
